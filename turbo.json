@@ -4,11 +4,12 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**", "packages/**/dist/**"]
     },
     "lint": {},
     "type-check": {},
     "dev": {
+      "dependsOn": ["build"],
       "cache": false,
       "persistent": true
     },

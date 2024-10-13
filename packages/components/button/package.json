@@ -1,0 +1,36 @@
+{
+  "name": "@elemental/button",
+  "version": "1.0.0",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./style.css": "./dist/style.css",
+    ".": "./src/index.tsx"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite && tailwindcss -i ./src/styles/globals.css -o ./dist/style.css --watch"
+  },
+  "devDependencies": {
+    "@elemental/eslint-config": "*",
+    "@elemental/tailwind-config": "*",
+    "@elemental/typescript-config": "*",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.0.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.5",
+    "vite-plugin-dts": "^4.2.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

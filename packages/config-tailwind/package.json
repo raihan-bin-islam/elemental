@@ -1,12 +1,13 @@
 {
-  "name": "@repo/tailwind-config",
+  "name": "@elemental/tailwind-config",
   "version": "0.0.0",
   "private": true,
+  "main": "tailwind.config.ts",
   "exports": {
     ".": "./tailwind.config.ts"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
+    "@elemental/typescript-config": "*",
     "tailwindcss": "^3.4.1"
   }
 }
